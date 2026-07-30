@@ -1,27 +1,14 @@
-# 橋本誠公認会計士事務所 採用サイト
+# 橋本誠公認会計士事務所 採用サイト Ver.3
 
-## GitHubへのアップロード手順
+## GitHubへの更新手順
+1. ZIPを解凍
+2. GitHubで `hashimoto-accounting/recruit` を開く
+3. `Add file` → `Upload files`
+4. 解凍した全ファイルをドラッグ＆ドロップ
+5. `Commit changes` を押す
+6. 数十秒〜数分後に公開サイトを更新して確認
 
-1. GitHubで `hashimoto-accounting/recruit` を開く
-2. `Add file` → `Upload files`
-3. 次の3ファイルをドラッグ＆ドロップ
-   - `index.html`
-   - `style.css`
-   - `script.js`
-4. 画面下の `Commit changes` を押す
-5. リポジトリの `Settings` → 左メニュー `Pages`
-6. `Build and deployment` の `Source` を `Deploy from a branch`
-7. `Branch` を `main`、フォルダを `/(root)` にして `Save`
-8. 数分待って表示されるURLを開く
-
-公開URLの予定:
+公開URL:
 https://hashimoto-accounting.github.io/recruit/
 
-## 写真の差し替え
-
-現時点では代表者写真欄を仮表示にしています。
-写真を掲載するときは、画像ファイルを追加し、HTMLを修正します。
-
-
-## Ver.2
-ZIPを解凍し、すべてのファイルをGitHubへアップロードしてください。同名ファイルは上書きします。
+古い表示が残る場合は Ctrl + F5 を押してください。
