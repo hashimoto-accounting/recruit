@@ -21,3 +21,7 @@ https://hashimoto-accounting.github.io/recruit/
 
 現時点では代表者写真欄を仮表示にしています。
 写真を掲載するときは、画像ファイルを追加し、HTMLを修正します。
+
+
+## Ver.2
+ZIPを解凍し、すべてのファイルをGitHubへアップロードしてください。同名ファイルは上書きします。
