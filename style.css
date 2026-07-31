@@ -125,7 +125,7 @@ button{font:inherit}
   width:100%;
   height:100%;
   object-fit:cover;
-  filter:brightness(1.22) saturate(.92);
+  filter:brightness(1.14) contrast(.96) saturate(.94);
 }
 .hero-shade{
   position:absolute;
@@ -150,15 +150,15 @@ button{font:inherit}
   opacity:.82;
 }
 .hero h1{
-  max-width:760px;
+  max-width:700px;
   margin:0;
   font-family:"Noto Serif JP",serif;
-  font-size:clamp(2.65rem,4.8vw,4.45rem);
+  font-size:clamp(2.35rem,4.15vw,3.85rem);
   font-weight:500;
-  line-height:1.35;
-  letter-spacing:.02em;
+  line-height:1.38;
+  letter-spacing:.025em;
   white-space:nowrap;
-  text-shadow:0 3px 18px rgba(0,0,0,.12);
+  text-shadow:0 2px 14px rgba(0,0,0,.12);
 }
 .hero-lead{
   margin:28px 0 0;
@@ -612,4 +612,43 @@ button{font:inherit}
   .contact-section h2{
     font-size:1.72rem;
   }
+}
+
+/* Ver.10 hero refinements */
+.hero-content{
+  width:min(1120px,calc(100% - 48px));
+}
+.hero-content::before{
+  content:"";
+  position:absolute;
+  z-index:-1;
+  left:-34px;
+  top:-38px;
+  width:min(710px,72vw);
+  height:calc(100% + 76px);
+  background:linear-gradient(90deg,rgba(18,45,67,.17),rgba(18,45,67,.05),transparent);
+  border-radius:10px;
+  backdrop-filter:blur(1.2px);
+}
+.hero-kicker,.hero-lead{
+  text-shadow:0 2px 12px rgba(0,0,0,.15);
+}
+.hero .button.primary{
+  background:rgba(255,255,255,.95);
+}
+@media(max-width:680px){
+  .hero h1{
+    font-size:clamp(2rem,8.9vw,3rem);
+    white-space:nowrap;
+  }
+  .hero-content::before{
+    left:-18px;
+    top:-28px;
+    width:calc(100% + 12px);
+    height:calc(100% + 56px);
+    background:linear-gradient(90deg,rgba(18,45,67,.20),rgba(18,45,67,.06),transparent);
+  }
+}
+@media(max-width:390px){
+  .hero h1{font-size:1.86rem;}
 }
