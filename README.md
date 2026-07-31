@@ -24,3 +24,10 @@ ZIP内の7ファイルをリポジトリ直下へ上書きしてください。
 - entrance.jpg
 - meeting-room.jpg
 - office-detail.jpg
+
+
+## Ver.12.1
+スマートフォン表示の4か所の見出しを個別に最適化しました。
+句読点だけの改行を防止し、iPhone SE相当（375px前後）と
+iPhone Pro Max相当（430px前後）で、文字サイズ・行間・字間を調整しています。
+PC表示には影響しません。
