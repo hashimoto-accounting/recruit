@@ -847,10 +847,13 @@ section[id]{
 }
 
 
-/* ===== Ver.12.1: four mobile headings ===== */
+
+
+/* ===== Ver.12.2: unified mobile heading typography ===== */
 .heading-office span,
 .heading-environment span,
 .heading-growth span,
+.heading-message span,
 .heading-fit span{
   display:block;
 }
@@ -859,108 +862,66 @@ section[id]{
   .heading-office span,
   .heading-environment span,
   .heading-growth span,
+  .heading-message span,
   .heading-fit span{
     white-space:nowrap;
     word-break:keep-all;
+    font-size:1em;
+    letter-spacing:inherit;
+    line-height:inherit;
   }
 
-  /* ① */
   .heading-office{
-    font-size:clamp(1.52rem,6.65vw,1.93rem)!important;
-    line-height:1.54!important;
-    letter-spacing:-.025em!important;
-  }
-  .heading-office span:last-child{
-    font-size:.91em;
-    letter-spacing:-.04em;
+    font-size:clamp(1.34rem,5.8vw,1.72rem)!important;
+    line-height:1.58!important;
+    letter-spacing:-.045em!important;
   }
 
-  /* ② */
   .heading-environment{
-    font-size:clamp(1.48rem,6.45vw,1.88rem)!important;
-    line-height:1.56!important;
-    letter-spacing:-.025em!important;
-  }
-  .heading-environment span:last-child{
-    font-size:.84em;
-    letter-spacing:-.055em;
+    font-size:clamp(1.23rem,5.35vw,1.60rem)!important;
+    line-height:1.60!important;
+    letter-spacing:-.06em!important;
   }
 
-  /* ③ */
   .heading-growth{
-    font-size:clamp(1.48rem,6.4vw,1.86rem)!important;
-    line-height:1.56!important;
-    letter-spacing:-.03em!important;
-  }
-  .heading-growth span:first-child{
-    font-size:.94em;
-    letter-spacing:-.04em;
-  }
-  .heading-growth span:last-child{
-    font-size:.90em;
-    letter-spacing:-.055em;
+    font-size:clamp(1.28rem,5.55vw,1.64rem)!important;
+    line-height:1.60!important;
+    letter-spacing:-.055em!important;
   }
 
-  /* ④ */
+  .heading-message{
+    font-size:clamp(1.28rem,5.55vw,1.64rem)!important;
+    line-height:1.60!important;
+    letter-spacing:-.05em!important;
+  }
+
   .heading-fit{
-    font-size:clamp(1.50rem,6.5vw,1.90rem)!important;
-    line-height:1.54!important;
-    letter-spacing:-.025em!important;
-  }
-  .heading-fit span:last-child{
-    font-size:.92em;
-    letter-spacing:-.045em;
-  }
-}
-
-/* iPhone Pro Max class */
-@media (min-width:414px) and (max-width:680px){
-  .heading-office span:last-child{font-size:.96em;letter-spacing:-.025em;}
-  .heading-environment span:last-child{font-size:.90em;letter-spacing:-.035em;}
-  .heading-growth span:first-child{font-size:.98em;letter-spacing:-.025em;}
-  .heading-growth span:last-child{font-size:.95em;letter-spacing:-.035em;}
-  .heading-fit span:last-child{font-size:.97em;letter-spacing:-.03em;}
-}
-
-/* iPhone SE class */
-@media (max-width:390px){
-  .heading-office{
-    font-size:1.49rem!important;
-    letter-spacing:-.035em!important;
-  }
-  .heading-office span:last-child{
-    font-size:.86em;
-    letter-spacing:-.055em;
-  }
-
-  .heading-environment{
-    font-size:1.45rem!important;
-    letter-spacing:-.035em!important;
-  }
-  .heading-environment span:last-child{
-    font-size:.77em;
-    letter-spacing:-.07em;
-  }
-
-  .heading-growth{
-    font-size:1.43rem!important;
+    font-size:clamp(1.40rem,6.05vw,1.76rem)!important;
+    line-height:1.58!important;
     letter-spacing:-.04em!important;
   }
-  .heading-growth span:first-child{
-    font-size:.90em;
-    letter-spacing:-.05em;
-  }
-  .heading-growth span:last-child{
-    font-size:.84em;
-    letter-spacing:-.07em;
-  }
+}
 
-  .heading-fit{
-    font-size:1.47rem!important;
-    letter-spacing:-.035em!important;
-  }
-  .heading-fit span:last-child{
-    font-size:.86em;
-    letter-spacing:-.06em;
-  }
+@media (min-width:414px) and (max-width:680px){
+  .heading-office{font-size:1.72rem!important;letter-spacing:-.035em!important;}
+  .heading-environment{font-size:1.60rem!important;letter-spacing:-.045em!important;}
+  .heading-growth{font-size:1.64rem!important;letter-spacing:-.045em!important;}
+  .heading-message{font-size:1.64rem!important;letter-spacing:-.04em!important;}
+  .heading-fit{font-size:1.76rem!important;letter-spacing:-.035em!important;}
+}
+
+@media (max-width:390px){
+  .heading-office{font-size:1.33rem!important;letter-spacing:-.055em!important;}
+  .heading-environment{font-size:1.20rem!important;letter-spacing:-.07em!important;}
+  .heading-growth{font-size:1.24rem!important;letter-spacing:-.065em!important;}
+  .heading-message{font-size:1.24rem!important;letter-spacing:-.06em!important;}
+  .heading-fit{font-size:1.36rem!important;letter-spacing:-.05em!important;}
+}
+
+@media (max-width:370px){
+  .heading-office{font-size:1.27rem!important;}
+  .heading-environment{font-size:1.14rem!important;}
+  .heading-growth{font-size:1.18rem!important;}
+  .heading-message{font-size:1.18rem!important;}
+  .heading-fit{font-size:1.30rem!important;}
 }
