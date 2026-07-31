@@ -1,32 +1,33 @@
-const menu = document.querySelector('.menu');
-const mobileNav = document.querySelector('.mobile-nav');
-if (menu && mobileNav) {
-  menu.addEventListener('click', () => {
-    const open = mobileNav.classList.toggle('open');
-    menu.setAttribute('aria-expanded', String(open));
-    menu.setAttribute('aria-label', open ? 'メニューを閉じる' : 'メニューを開く');
+const header = document.querySelector(".site-header");
+const menuButton = document.querySelector(".menu-button");
+const mobileNav = document.querySelector(".mobile-nav");
+
+const setHeader = () => {
+  header.classList.toggle("scrolled", window.scrollY > 30);
+};
+setHeader();
+window.addEventListener("scroll", setHeader, { passive: true });
+
+menuButton?.addEventListener("click", () => {
+  const open = mobileNav.classList.toggle("open");
+  menuButton.setAttribute("aria-expanded", String(open));
+});
+
+mobileNav?.querySelectorAll("a").forEach(link => {
+  link.addEventListener("click", () => {
+    mobileNav.classList.remove("open");
+    menuButton.setAttribute("aria-expanded", "false");
   });
-  mobileNav.querySelectorAll('a').forEach(link => link.addEventListener('click', () => {
-    mobileNav.classList.remove('open');
-    menu.setAttribute('aria-expanded', 'false');
-    menu.setAttribute('aria-label', 'メニューを開く');
-  }));
-}
+});
 
-const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-const revealItems = document.querySelectorAll('.reveal');
-if (reducedMotion || !('IntersectionObserver' in window)) {
-  revealItems.forEach(item => item.classList.add('visible'));
-} else {
-  const observer = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('visible');
-        observer.unobserve(entry.target);
-      }
-    });
-  }, { threshold: 0.12 });
-  revealItems.forEach(item => observer.observe(item));
-}
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("visible");
+      observer.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.12 });
 
-document.getElementById('year').textContent = new Date().getFullYear();
+document.querySelectorAll(".reveal").forEach(el => observer.observe(el));
+document.getElementById("year").textContent = new Date().getFullYear();
