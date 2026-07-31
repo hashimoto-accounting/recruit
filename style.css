@@ -405,3 +405,23 @@ button{font:inherit}
   .footer-inner{display:block}
   .footer-inner>p{margin-top:24px}
 }
+
+
+.intro-panel p span{display:block;white-space:nowrap;}
+
+@media (max-width:680px){
+.hero-card{padding:28px 20px 30px!important}
+.hero h1{font-size:2.2rem!important;line-height:1.4!important}
+.hero-lead{font-size:.95rem!important;line-height:1.8!important}
+.section-heading h2{font-size:1.9rem!important;line-height:1.55!important}
+.visual-break-copy h2{font-size:2rem!important;line-height:1.5!important}
+.message-copy h2{font-size:1.9rem!important;line-height:1.55!important}
+.contact-section h2{font-size:1.9rem!important;line-height:1.55!important}
+.hero-actions .button{max-width:none;width:100%}
+.hero-text-link{margin-top:4px}
+.photo-main img{height:280px!important}
+.photo-sub img{height:130px!important}
+.visual-break img{min-height:430px!important}
+.message-photo img{height:320px!important}
+.value-card,.requirements,.faq-list details{border-radius:4px}
+}
