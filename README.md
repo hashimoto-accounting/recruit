@@ -1,17 +1,6 @@
 # 橋本誠公認会計士事務所 採用サイト
 
-Ver.7 完成版
+Ver.8
 
-## 公開方法
-このフォルダ内の7ファイルを、GitHubリポジトリ `hashimoto-accounting/recruit` のトップへアップロードしてください。
-
-既存の写真ファイルは削除しないでください。
-
-- hero.jpg
-- entrance.jpg
-- meeting-room.jpg
-- meeting-space.jpg
-- office-detail.jpg
-
-公開URL:
-https://hashimoto-accounting.github.io/recruit/
+トップ画面のキャッチコピー、文字サイズ、写真の明るさ、余白、ボタンの質感を調整した差し替え版です。
+既存の写真ファイルは削除せず、そのまま使用してください。
