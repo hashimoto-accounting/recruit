@@ -590,17 +590,12 @@ section[id]{
   }
 
   .intro-statement{
-    font-size:.85rem;
+    font-size:.94rem;
     line-height:1.75;
   }
 
   .intro-statement span:last-child{
     font-size:.94rem;
-  }
-
-  .intro-message{
-    font-size:clamp(1.08rem,5.3vw,1.42rem)!important;
-    line-height:1.72!important;
   }
 
   .intro-message span:first-child{
